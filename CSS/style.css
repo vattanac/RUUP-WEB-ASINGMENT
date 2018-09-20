@@ -5,6 +5,7 @@
     background-size: 100% 100%;
     padding-top: 10px;
     position: relative;
+    font-family: 'Metal', cursive;
    
 
 }
@@ -42,8 +43,9 @@
 }
 
 #search {
+    font-family: 'Metal', cursive;
     position: relative;
-    top: -25px;
+    top: -29px;
 }
 
 #search img {
@@ -56,7 +58,7 @@
 }
 
 #nav li a {
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     color: #dbb158;
 }
 
@@ -72,7 +74,7 @@
 
 div#phrase h2 {
     color: #dbb158;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 #border {
@@ -213,7 +215,7 @@ div#phrase h2 {
 
 #container-body {
 
-    box-shadow: 1px 0px 2px #333;
+    box-shadow: 1px 1px 10px rgb(219, 219, 219);
 }
 
 #art h2 {
@@ -233,7 +235,9 @@ div#phrase h2 {
 #block4 {
     margin-bottom: 60px;
 }
-
+#last-block{
+    font-family: 'Metal', cursive;
+}
 #last-block div img {
     border-radius: 50%;
     width: 100px;
@@ -247,6 +251,7 @@ div#phrase h2 {
 
 #last-block div p {
     clear: both;
+    color: #6C5B39;
     text-align: center;
 }
 
