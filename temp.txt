@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
+    <style>
+
+    .input-field input:focus + label {
+    	  color: #DDB35A !important;
+    }
+
+ 
+ 	.row .input-field input:focus {
+  	 	border-bottom: 1px solid #DDB35A !important;
+   		box-shadow: 0 1px 0 0 #DDB35A !important
+ 	}
+	 #fuk{
+		 float: right;
+	 }
+  
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="row">
+        <div class="col s12">
+            <div class="row">
+                <div class="input-field col s10">
+                 
+                    <input type="text" id="autocomplete-input" class="autocomplete">
+				<label for="autocomplete-input">search</label>
+				
+			<span id="fuk" style="padding:0 27px"><i class="material-icons prefix" >search</i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,402 @@
+#header {
+    background-image: url("../image/cover.png");
+    background-color: #cccccc;
+    height: 600px;
+    background-size: 100% 100%;
+    padding-top: 10px;
+    position: relative;
+   
+
+}
+
+.input-field input:focus + label {
+    color: #DDB35A !important;
+}
+
+
+.row .input-field input:focus {
+     border-bottom: 0.5px solid #DDB35A !important;
+     box-shadow: 0 0.5px 0 0 #DDB35A !important
+}
+#fuk{
+   float: right;
+}
+
+
+#topHeader img {
+    width: 25px;
+    height: 25px;
+}
+
+
+.md-form {
+    padding: 0;
+    margin: 0;
+    color: #dbb158 !important;
+}
+
+.form-control {
+    text-align: right;
+    padding-right: 25px !important;
+    color: #dbb158 !important;
+}
+
+#search {
+    position: relative;
+    top: -25px;
+}
+
+#search img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 8px;
+    right: -11px;
+
+}
+
+#nav li a {
+    padding: 10px 20px;
+    color: #dbb158;
+}
+
+#nav li a:hover {
+    text-decoration: underline;
+}
+
+#phrase {
+    position: absolute;
+    right: 80px;
+    bottom: 150px;
+}
+
+div#phrase h2 {
+    color: #dbb158;
+    font-size: 50px;
+}
+
+#border {
+    width: 157px;
+    height: 5px;
+    background-color: #dbb158;
+    position: absolute;
+    right: 80px;
+    bottom: 140px;
+}
+.textTo-bottom{
+    margin-top:170px;
+}
+#card1,
+#card2,
+#card3,
+#card4 {
+    background-image: url("../image/robam.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rgba-black-strong {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35, 31, 31, 0.68);
+}
+
+#card-content {
+    padding-top: 200px;
+
+}
+
+#card-content a:hover {
+    text-decoration: none;
+}
+
+.title-card {
+    border-bottom: 2px solid #ffffff;
+}
+
+#border1 {
+    margin: auto;
+    width: 70%;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+#body {
+    padding: 20px 0;
+}
+
+#all {
+    text-align: center;
+    margin: auto;
+}
+
+#all a {
+    color: #ddb35a;
+    text-decoration: underline;
+}
+
+#all a:hover {
+    text-decoration: none;
+}
+
+#art img {
+    margin-top: 65px;
+    width: 25px;
+    height: 25px;
+}
+
+#art h2 a {
+    font-size: 20px;
+    color: #ddb35a;
+    text-decoration: underline;
+}
+
+#art h2 a:hover {
+    text-decoration: none;
+}
+
+#middle-contaner {
+    background-image: url("../image/w1.jpg");
+    clip-path: polygon(0 0, 99% 0, 72% 100%, 0% 100%);
+    height: 330px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+#middle-contaner-inverse {
+    background-image: url("../image/w2.jpg");
+    clip-path: polygon(24% 0, 100% 0, 100% 100%, 0% 100%);
+    height: 330px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.middle-content {
+    width: 50%;
+    float: right;
+    padding: 40px 20px 40px 0px;
+}
+
+.middle-content-inverse {
+    width: 50%;
+    float: left;
+    padding: 40px 20px;
+}
+
+.middle-content-inverse p {
+    font-size: 18px;
+}
+
+.middle-content p {
+    font-size: 18px;
+}
+
+.middle-content-inverse h2 a {
+    color: #6c5b39;
+    text-decoration: none;
+}
+
+.middle-content h2 a {
+    color: #6c5b39;
+    text-decoration: none;
+}
+
+.container-full {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#container-body {
+
+    box-shadow: 1px 0px 2px #333;
+}
+
+#art h2 {
+    margin-left: 10px;
+}
+
+#border2 {
+    width: 110px;
+    height: 3px;
+    background-color: #6c5b39;
+    margin-bottom: 20px;
+}
+
+#block1,
+#block2,
+#block3,
+#block4 {
+    margin-bottom: 60px;
+}
+
+#last-block div img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#last-block a:hover {
+    text-decoration: none;
+
+}
+
+#last-block div p {
+    clear: both;
+    text-align: center;
+}
+
+#footer {
+    background-color: #343434;
+    color: #ddb35a;
+    padding-bottom: 40px;
+}
+
+#footer-title {
+    text-align: center;
+    margin: auto;
+    padding: 40px 0;
+}
+
+div#footer-title h2 {
+    margin: 10px 0;
+}
+
+#contact p {
+    text-align: left;
+}
+
+#contact h5 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact #b1,
+#contact #b2 {
+    border-right: 3px solid #ddb35a;
+}
+
+#contact img {
+    margin: 10px;
+}
+
+#contact img {
+    width: 50px;
+}
+
+#nav-small-device {
+    display: none;
+}
+
+#nav-big {
+    margin: 0 auto;
+}
+
+
+
+/* sub css */
+
+#header-sub {
+    background-color: #343434;
+    padding: 10px 0;
+}
+
+#body-sub {
+    margin: 40px auto;
+
+}
+
+#content-sub {
+
+    box-shadow: 0px 1px 1px #333;
+    border-radius: 5px;
+}
+
+div#content-sub h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+div#content-sub p {
+    padding: 0 20px 20px 20px;
+}
+
+#content-sub-footer {
+
+    margin: auto;
+    padding: 20px ;
+    text-align: center;
+}
+
+div#content-sub-footer p {
+    float: right;
+}
+
+/* end sub css */
+
+
+
+
+
+
+@media screen and (max-width: 782px) {
+
+    #contact #b1,
+    #contact #b2 {
+        border: 0px;
+        margin-bottom: 20px;
+    }
+
+    #contact #b3 {
+        text-align: center;
+
+    }
+
+    #contact p {
+        text-align: center;
+    }
+
+    .middle-content-inverse,
+    .middle-content {
+        padding: 10px 10px;
+    }
+
+    #nav-small-device {
+        padding-left: 20px;
+        display: block;
+    }
+
+    #nav-small-device #topHeader {
+        text-align: center;
+    }
+
+    #nav {
+        text-align: center;
+    }
+
+    #nav-big {
+        display: none;
+    }
+
+    #phrase {
+        bottom: 100px
+    }
+
+    #border {
+        bottom: 95px;
+    }
+
+    #nav-small-device #search {
+        width: 34%;
+        text-align: left;
+        margin: auto;
+    }
+
+    #nav-small-device #search img {
+        right: -24px;
+    }
+}
