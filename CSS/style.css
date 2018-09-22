@@ -27,7 +27,7 @@ body {
 }
 
 
-}
+
 .row .input-field input:focus {
     border-bottom: 0.5px solid #DDB35A !important;
     box-shadow: 0 0.5px 0 0 #DDB35A !important
@@ -161,7 +161,7 @@ div#phrase h2 {
 }
 
 #art img {
-    margin-top: 65px;
+    margin-top: -6px;
     width: 25px;
     height: 25px;
 }
@@ -258,7 +258,8 @@ div#phrase h2 {
 }
 
 #art h2 {
-    margin-left: 10px;
+    margin-left: 0px;
+    margin-top: -3%;
 }
 
 #border2 {
