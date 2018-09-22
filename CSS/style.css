@@ -6,21 +6,35 @@
     padding-top: 10px;
     position: relative;
     font-family: 'Metal', cursive;
-   
+    margin-bottom: 0px;
 
 }
 
-.input-field input:focus + label {
+body {
+    background-color: rgb(243, 243, 243);
+}
+
+.customcontainer {
+    background-color: white;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: 10%;
+    width: 80% !important
+}
+
+.input-field input:focus+label {
     color: #DDB35A !important;
 }
 
 
-.row .input-field input:focus {
-     border-bottom: 0.5px solid #DDB35A !important;
-     box-shadow: 0 0.5px 0 0 #DDB35A !important
 }
-#fuk{
-   float: right;
+.row .input-field input:focus {
+    border-bottom: 0.5px solid #DDB35A !important;
+    box-shadow: 0 0.5px 0 0 #DDB35A !important
+}
+
+#fuk {
+    float: right;
 }
 
 
@@ -85,9 +99,11 @@ div#phrase h2 {
     right: 80px;
     bottom: 140px;
 }
-.textTo-bottom{
-    margin-top:170px;
+
+.textTo-bottom {
+    margin-top: 170px;
 }
+
 #card1,
 #card2,
 #card3,
@@ -160,8 +176,8 @@ div#phrase h2 {
     text-decoration: none;
 }
 
-#middle-contaner {
-    background-image: url("../image/w1.jpg");
+#middle-contaner1 {
+    background-image: url("../image/w2.jpg");
     clip-path: polygon(0 0, 99% 0, 72% 100%, 0% 100%);
     height: 330px;
     background-repeat: no-repeat;
@@ -169,8 +185,26 @@ div#phrase h2 {
     width: 50%;
 }
 
-#middle-contaner-inverse {
-    background-image: url("../image/w2.jpg");
+#middle-contaner2 {
+    background-image: url("../image/pchu.jpg");
+    clip-path: polygon(0 0, 99% 0, 72% 100%, 0% 100%);
+    height: 330px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+#middle-contaner-inverse1 {
+    background-image: url("../image/w1.jpg");
+    clip-path: polygon(24% 0, 100% 0, 100% 100%, 0% 100%);
+    height: 330px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+#middle-contaner-inverse2 {
+    background-image: url("../image/monk.jpg");
     clip-path: polygon(24% 0, 100% 0, 100% 100%, 0% 100%);
     height: 330px;
     background-repeat: no-repeat;
@@ -235,12 +269,15 @@ div#phrase h2 {
 #block4 {
     margin-bottom: 60px;
 }
-#last-block{
+
+#last-block {
     font-family: 'Metal', cursive;
 }
+
 #last-block div img {
     border-radius: 50%;
     width: 100px;
+    object-fit: cover;
     height: 100px;
 }
 
@@ -333,7 +370,7 @@ div#content-sub p {
 #content-sub-footer {
 
     margin: auto;
-    padding: 20px ;
+    padding: 20px;
     text-align: center;
 }
 
