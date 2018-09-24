@@ -522,3 +522,23 @@ element.style {
     background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/tulip.jpg'); 
     background-size: 100% 100%;
 }
+.customecard-l{
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/tulip.jpg'); 
+    border-radius: 20px 0px 0px 20px; 
+background-size: 100% 100%;
+    box-shadow: 1px 1px 30px rgb(219, 219, 219)
+}
+.customecard-r{
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 1px 1px 30px rgb(219, 219, 219)
+}
+.custome-cate-title h2 a{
+    font-size: 20px;
+    color: #ddb35a;
+    text-decoration: underline;
+}
+.custome-cate-title img{
+    
+    width: 25px;
+    height: 25px;
+}
