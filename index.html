@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,11 +15,22 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+    <!---Flikity-->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
     <!-- google font -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Moulpali" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="./image/mustach.png">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./CSS/flickity.css">
+    <link rel="stylesheet" href="./CSS/flickity.min.css">
+
+    <script src="./js/flickity.pkgd.js"></script>
+    <script src="./js/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -93,13 +102,13 @@
 
                 <div class="col-1">
                     <div id="topHeader">
-                        <img  src="image/mustach.png" alt="">
+                        <img src="image/mustach.png" alt="">
                     </div>
 
                 </div>
                 <div class="col-1">
                     <div id="topHeader">
-                        <img  src="image/grid.png" alt="">
+                        <img src="image/grid.png" alt="">
                     </div>
                 </div>
 
@@ -112,16 +121,16 @@
                         <div class="col s12">
                             <div class="row">
                                 <div class="input-field col s10">
-                                 
-                                    <input type="text" id="autocomplete-input" class="autocomplete">
-                                <label for="autocomplete-input">ស្វែងរក</label>
-                                
-                            <span id="fuk" style="padding:0 27px;color:#DDB35A"><i class="material-icons prefix" >search</i></span>
+
+                                    <input type="text" id="autocomplete-input" class="autocomplete atc">
+                                    <label for="autocomplete-input">ស្វែងរក</label>
+
+                                    <span id="floatt" style="padding:0 27px;color:#DDB35A"><i class="material-icons prefix">search</i></span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                   
+
                 </div>
 
                 <!-- end search -->
@@ -166,10 +175,135 @@
 
         <!-- start body -->
 
+        <div class="carousel mycarousel" data-flickity='{ "lazyLoad": 2, "initialIndex": 2 }'>
+            <div class="carousel-cell " style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/grapes.jpg'); background-size: 100% 100%;">
+                <div class="rgba-black-strong">
+                    <!-- Content -->
+                    <div class="text-white text-center" id="card-content">
+                        <div class="">
+                            <h3 class="card-title pt-2 fontMoulpali"><strong><a href="" style="color:#ffffff;"> របាំ</a></strong></h3>
+                            <div id="border1"></div>
+                            <p ><small>មាសមិនអាចកាត់ថ្លៃបាន</small></p>
+
+                        </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+            </div>
+            
+            <div class="carousel-cell " style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/touch-screen.jpg'); background-size: 100% 100%;">
+                <div class="rgba-black-strong">
+                    <!-- Content -->
+                    <div class="text-white text-center" id="card-content">
+                        <div class="">
+                            <h3 class="card-title pt-2 fontMoulpali"><strong><a href="" style="color:#ffffff;"> ប្រជាប្រិយ</a></strong></h3>
+                            <div id="border1"></div>
+                            <p><small>មាសមិនអាចកាត់ថ្លៃបាន</small></p>
+
+                        </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+            </div>
+            
+            <div class="carousel-cell " style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/gulls.jpg'); background-size: 100% 100%;">
+                <div class="rgba-black-strong">
+                    <!-- Content -->
+                    <div class="text-white text-center" id="card-content">
+                        <div class="">
+                            <h3 class="card-title pt-2 fontMoulpali"><strong><a href="" style="color:#ffffff;"> អប្សារា</a></strong></h3>
+                            <div id="border1"></div>
+                            <p><small>មាសមិនអាចកាត់ថ្លៃបាន</small></p>
+
+                        </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+            </div>
+            
+            <div class="carousel-cell " style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/van.jpg'); background-size: 100% 100%;">
+                <div class="rgba-black-strong">
+                    <!-- Content -->
+                    <div class="text-white text-center" id="card-content">
+                        <div class="">
+                            <h3 class="card-title pt-2 fontMoulpali"><strong><a href="" style="color:#ffffff;"> ល្ខោន</a></strong></h3>
+                            <div id="border1"></div>
+                            <p><small>មាសមិនអាចកាត់ថ្លៃបាន</small></p>
+
+                        </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+            </div>
+            
+            <div class="carousel-cell " style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/leaf-droplets.jpg'); background-size: 100% 100%;">
+                <div class="rgba-black-strong">
+                    <!-- Content -->
+                    <div class="text-white text-center" id="card-content">
+                        <div class="">
+                            <h3 class="card-title pt-2 fontMoulpali"><strong><a href="" style="color:#ffffff;"> ប្រាសាទ</a></strong></h3>
+                            <div id="border1"></div>
+                            <p><small>មាសមិនអាចកាត់ថ្លៃបាន</small></p>
+
+                        </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+            </div>
+            
+            <div class="carousel-cell " style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/shore.jpg'); background-size: 100% 100%;">
+                <div class="rgba-black-strong">
+                    <!-- Content -->
+                    <div class="text-white text-center" id="card-content">
+                        <div class="">
+                            <h3 class="card-title pt-2 fontMoulpali"><strong><a href="" style="color:#ffffff;"> ក្បាច់គុន</a></strong></h3>
+                            <div id="border1"></div>
+                            <p><small>មាសមិនអាចកាត់ថ្លៃបាន</small></p>
+
+                        </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+            </div>
+            
+            <div class="carousel-cell " style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/wolf.jpg'); background-size: 100% 100%;">
+                <div class="rgba-black-strong">
+                    <!-- Content -->
+                    <div class="text-white text-center" id="card-content">
+                        <div class="">
+                            <h3 class="card-title pt-2 fontMoulpali"><strong><a href="" style="color:#ffffff;"> ភ្លេង</a></strong></h3>
+                            <div id="border1"></div>
+                            <p><small>មាសមិនអាចកាត់ថ្លៃបាន</small></p>
+
+                        </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+            </div>
+            
+            <div class="carousel-cell " style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/raspberries.jpg'); background-size: 100% 100%;">
+                <div class="rgba-black-strong">
+                    <!-- Content -->
+                    <div class="text-white text-center" id="card-content">
+                        <div class="">
+                            <h3 class="card-title pt-2 fontMoulpali"><strong><a href="" style="color:#ffffff;"> ប្រវិត្តសាស្ត្រ</a></strong></h3>
+                            <div id="border1"></div>
+                            <p><small>មាសមិនអាចកាត់ថ្លៃបាន</small></p>
+
+                        </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+            </div>
+
+
+
+
+        </div>
+
         <div id="body" class="px-3">
 
             <!-- start category top  -->
-
             <div class="row">
                 <div class="col-md-3 col-lg-3">
                     <!-- Card -->
@@ -254,7 +388,7 @@
 
             <div id="block1">
                 <div class="row px-3" id="art">
-                    <img  src="image/artt.png" alt="">
+                    <img src="image/artt.png" alt="">
                     <h2><a href="#">សិល្បៈ</a></h2>
 
                 </div>
@@ -336,7 +470,7 @@
                 </div>
                 <div class="row my-4 mx-2" id="container-body">
 
-                    <div class="middle-content-inverse" >
+                    <div class="middle-content-inverse">
                         <h2 style="font-size:30px"><a href="">ចម្លាក់</a></h2>
                         <div id="border2">
 
@@ -347,7 +481,7 @@
                             ក្បាច់​លិប​ជា​រឿង​នៅ​តាម​ថែវ​(១)ជាន់​ទី​១​នៃ​ប្រាសាទ​អង្គរវត្ត។
                         </p>
                     </div>
-                    
+
                     <div id="middle-contaner-inverse2">
 
                     </div>
@@ -355,8 +489,15 @@
                 </div>
             </div>
 
+            <div>
+                <p class=" d-flex justify-content-center fontMetal">ស្នើរអាន</p>
+            </div>
+            <br>
             <div id="last-block" class="row">
-                <div class="col-md-1 col-lg-1"></div>
+
+
+                <div class="col-md-1 col-lg-1"></div><br>
+
                 <div class="col-md-2 col-lg-2">
                     <a href="">
                         <p style="text-align:center;"><img src="image/wow.jpg" alt=""></p>
@@ -430,9 +571,9 @@
                 <div class="col-md-3 col-lg-3 mx-4 px-4" id="b3">
                     <h5>Social NetWork</h5>
 
-                    <img src="image/logo.png" alt="">
-                    <img src="image/logo.png" alt="">
-                    <img src="image/logo.png" alt="">
+                    <img src="image/facebook.png" alt="">
+                    <img src="image/instagram_new.png" alt="">
+                    <img src="image/youtube.png" alt="">
 
                 </div>
                 <div class="col-md-1 col-lg-1"></div>

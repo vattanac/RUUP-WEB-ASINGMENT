@@ -9,7 +9,16 @@
     margin-bottom: 0px;
 
 }
-
+.mycarousel{
+    margin-top: 60px;
+}
+.fontMoulpali{
+    font-size: 25px;
+    font-family: 'Moulpali', cursive;
+}
+.atc:focus{
+  color:#DDB35A  !important;
+}
 body {
     background-color: rgb(243, 243, 243);
 }
@@ -33,7 +42,7 @@ body {
     box-shadow: 0 0.5px 0 0 #DDB35A !important
 }
 
-#fuk {
+#floatt {
     float: right;
 }
 
@@ -88,7 +97,7 @@ body {
 
 div#phrase h2 {
     color: #dbb158;
-    font-size: 40px;
+    font-size: 32px;
 }
 
 #border {
@@ -344,24 +353,46 @@ div#footer-title h2 {
     margin: 0 auto;
 }
 
+.fontMetal{
+    color: #6C5B39;
+    font-family: 'Metal', cursive;
+}
 
-
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
 /* sub css */
 
 #header-sub {
     background-color: #343434;
     padding: 10px 0;
+    font-family: 'Metal', cursive;
+    height: 60px;
 }
 
 #body-sub {
     margin: 40px auto;
 
 }
+.card .card-title {
+    font-size: 24px;
+    font-family: 'Moulpali', cursive;
+    font-weight: 300;
+}
 
 #content-sub {
-
-    box-shadow: 0px 1px 1px #333;
     border-radius: 5px;
+    box-shadow: 1px 1px 10px rgb(219, 219, 219);
 }
 
 div#content-sub h2 {
@@ -447,4 +478,47 @@ div#content-sub-footer p {
     #nav-small-device #search img {
         right: -24px;
     }
+}
+/*flickity*/
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #FAFAFA;
+}
+
+.carousel-cell {
+  width: 25%;
+  height: 500px;
+  margin-right: 10px;
+  background: #333;
+}
+
+.carousel-cell-imagee {
+  display: block;
+  max-height: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+          transition: opacity 0.4s;
+}
+
+
+/* fade in lazy loaded image */
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
+}
+element.style {
+    height: 500px !important;
+    touch-action: pan-y;
+}
+.myimage{
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/tulip.jpg'); 
+    background-size: 100% 100%;
 }
