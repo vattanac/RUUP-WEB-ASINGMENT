@@ -22,10 +22,13 @@
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Moulpali" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
     <link rel="icon" href="./image/mustach.png">
+    
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="./CSS/flickity.css">
     <link rel="stylesheet" href="./CSS/flickity.min.css">
 
@@ -177,171 +180,30 @@
 
         <!-- start body -->
 
-        <div class="carousel mycarousel " data-flickity='{ "lazyLoad": 2, "initialIndex": 2 }'>
-           <div class="carousel-cell " style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/grapes.jpg'); background-size: 100% 100%;">
+        <div class="carousel mycarousel pl-5 pr-5" data-flickity='{ "lazyLoad": 2, "initialIndex": 2 }'>
+            <div class="carousel-cell " style="background-image: url('`+ category.img  +`'); background-size: 100% 100%;">
                 <div class="rgba-black-strong">
                     <!-- Content -->
                     <div class="text-white text-center" id="card-content">
                         <div class="">
-                            <h3 class="card-title pt-2 fontMoulpali"><strong><a href="" style="color:#ffffff;"> របាំ</a></strong></h3>
-                            <div id="border1"></div>
-                            <p ><small>មាសមិនអាចកាត់ថ្លៃបាន</small></p>
-
-                        </div>
-                    </div>
-                    <!-- Content -->
-                </div>
-            </div>
-            
-            <div class="carousel-cell " style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/touch-screen.jpg'); background-size: 100% 100%;">
-                <div class="rgba-black-strong">
-                    <!-- Content -->
-                    <div class="text-white text-center" id="card-content">
-                        <div class="">
-                            <h3 class="card-title pt-2 fontMoulpali"><strong><a href="" style="color:#ffffff;"> ប្រជាប្រិយ</a></strong></h3>
+                            <h3 class="card-title pt-2 fontMoulpali"><strong><a href="" style="color:#ffffff;">`+
+                                        category.type+`</a></strong></h3>
                             <div id="border1"></div>
                             <p><small>មាសមិនអាចកាត់ថ្លៃបាន</small></p>
 
                         </div>
                     </div>
-                    <!-- Content -->
-                </div>
-            </div>
-            
-            <div class="carousel-cell " style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/gulls.jpg'); background-size: 100% 100%;">
-                <div class="rgba-black-strong">
-                    <!-- Content -->
-                    <div class="text-white text-center" id="card-content">
-                        <div class="">
-                            <h3 class="card-title pt-2 fontMoulpali"><strong><a href="" style="color:#ffffff;"> អប្សារា</a></strong></h3>
-                            <div id="border1"></div>
-                            <p><small>មាសមិនអាចកាត់ថ្លៃបាន</small></p>
 
-                        </div>
-                    </div>
-                    <!-- Content -->
                 </div>
             </div>
-            
-            <div class="carousel-cell " style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/van.jpg'); background-size: 100% 100%;">
-                <div class="rgba-black-strong">
-                    <!-- Content -->
-                    <div class="text-white text-center" id="card-content">
-                        <div class="">
-                            <h3 class="card-title pt-2 fontMoulpali"><strong><a href="" style="color:#ffffff;"> ល្ខោន</a></strong></h3>
-                            <div id="border1"></div>
-                            <p><small>មាសមិនអាចកាត់ថ្លៃបាន</small></p>
 
-                        </div>
-                    </div>
-                    <!-- Content -->
-                </div>
-            </div>
-            
-            <div class="carousel-cell " style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/leaf-droplets.jpg'); background-size: 100% 100%;">
-                <div class="rgba-black-strong">
-                    <!-- Content -->
-                    <div class="text-white text-center" id="card-content">
-                        <div class="">
-                            <h3 class="card-title pt-2 fontMoulpali"><strong><a href="" style="color:#ffffff;"> ប្រាសាទ</a></strong></h3>
-                            <div id="border1"></div>
-                            <p><small>មាសមិនអាចកាត់ថ្លៃបាន</small></p>
 
-                        </div>
-                    </div>
-                    <!-- Content -->
-                </div>
-            </div>
-            
-            
 
 
         </div>
 
         <div id="body" class="px-3">
 
-            <!-- start category top  -->
-            <div class="row">
-                <div class="col-md-3 col-lg-3">
-                    <!-- Card -->
-                    <div class="card card-image  mb-3 mt-3" id="card4">
-                        <div class="rgba-black-strong">
-                            <!-- Content -->
-                            <div class="text-white text-center" id="card-content">
-                                <div class="textTo-bottom">
-                                    <h3 class="card-title pt-2 "><strong><a href="" style="color:#ffffff;"> របាំ</a></strong></h3>
-                                    <div id="border1"></div>
-                                    <p><small>មាសមិនអាចកាត់ថ្លៃបាន</small></p>
-
-                                </div>
-                            </div>
-                            <!-- Content -->
-                        </div>
-                    </div>
-                    <!-- Card -->
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <!-- Card -->
-                    <div class="card card-image  mb-3 mt-3" id="card4" style="background-image:url(../image/takong.png)">
-                        <div class="rgba-black-strong">
-                            <!-- Content -->
-                            <div class="text-white text-center" id="card-content">
-                                <div class="textTo-bottom">
-                                    <h3 class="card-title pt-2 "><strong><a href="" style="color:#ffffff">ប្រពៃណី</a></strong></h3>
-                                    <div id="border1"></div>
-                                    <p><small>មាសមិនអាចកាត់ថ្លៃបាន</small></p>
-
-                                </div>
-                            </div>
-                            <!-- Content -->
-                        </div>
-                    </div>
-                    <!-- Card -->
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <!-- Card -->
-                    <div class="card card-image  mb-3 mt-3" id="card4" style="background-image:url(../image/apsa.jpg)">
-                        <div class="rgba-black-strong">
-                            <!-- Content -->
-                            <div class="text-white text-center" id="card-content">
-                                <div class="textTo-bottom">
-                                    <h3 class="card-title pt-2 "><strong><a href="" style="color:#ffffff">អប្សារា</a></strong></h3>
-                                    <div id="border1"></div>
-                                    <p><small>មាសមិនអាចកាត់ថ្លៃបាន</small></p>
-
-                                </div>
-                            </div>
-                            <!-- Content -->
-                        </div>
-                    </div>
-                    <!-- Card -->
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <!-- Card -->
-                    <div class="card card-image  mb-3 mt-3" id="card4" style="background-image:url(../image/play.jpg)">
-                        <div class="rgba-black-strong">
-                            <!-- Content -->
-                            <div class="text-white text-center" id="card-content">
-                                <div class="textTo-bottom">
-                                    <h3 class="card-title pt-2 "><strong><a href="" style="color:#ffffff">ល្ខោន</a></strong></h3>
-                                    <div id="border1"></div>
-                                    <p><small>មាសមិនអាចកាត់ថ្លៃបាន</small></p>
-
-                                </div>
-                            </div>
-                            <!-- Content -->
-                        </div>
-                    </div>
-                    <!-- Card -->
-                </div>
-            </div>
-            <div class="row">
-                <p id="all"><a href="#">ទាំងអស់</a></p>
-            </div>
-
-            <!-- end category top  -->
-
-            <!-- start category middle -->
 
             <div id="block1">
                 <div class="row px-3" id="art">
@@ -541,7 +403,7 @@
 
 
     </div>
-
+    <script src="./js/category.js"></script>
 </body>
 
 </html>

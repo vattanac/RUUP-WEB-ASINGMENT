@@ -1,0 +1,85 @@
+.plyr--video {
+    border-radius: 10px 10px 0px 0px !important;
+    background: #000;
+    overflow: hidden;
+    
+  }
+    .container {
+      margin: 20px auto;
+      max-width: 500px;
+    }
+    .plyr__control--overlaid {
+      color: #DDB35A !important;
+      background: rgb(255, 255, 255) !important;
+    }
+    .plyr__control:hover, .plyr--video .plyr__control{
+      color: #DDB35A !important;
+      background: rgb(255, 255, 255) !important;
+  }
+  .plyr--full-ui input[type=range] {
+    color: #DDB35A !important;
+  }
+  .customecard-t{
+    /* border-radius: 20px 0px 0px 20px;  */
+    background-size: 100% 100%;
+    background-color: #DDB35A;
+    /* box-shadow: 1px 1px 30px rgb(219, 219, 219) */
+}
+.customecard-b{
+    /* border-radius: 0px 20px 20px 0px; */
+    box-shadow: 1px 1px 30px rgb(219, 219, 219)
+}
+.cusbot-bar{
+  border-radius: 0px 0px  10px 10px;
+  padding: 30px;
+}
+
+/*ADD SCROLLBAR*/
+/* body {
+  font-family:sans-serif;
+  height:100%;
+  margin:0 auto;
+  width:100%;
+} */
+
+.weswap-current,
+.weswap-new {
+  display:inline-block;
+  height:200px;
+  /* margin:10px 40px; */
+  padding:5px;
+  overflow:hidden;
+  overflow-y:scroll;
+  /* width:95%; */
+}
+
+.weswap-current::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+.weswap-current::-webkit-scrollbar-track {
+  background-color:#edeadf;
+  border-radius: 10px;
+}
+ 
+.weswap-current::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color:#ffc72e;
+}
+
+.weswap-new::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+.weswap-new::-webkit-scrollbar-track {
+  background-color:#5A5D66;
+  border-radius: 10px;
+}
+ 
+.weswap-new::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color:#ffc72e;
+}
+.weswap-current::-webkit-scrollbar{
+    width: 5px
+}

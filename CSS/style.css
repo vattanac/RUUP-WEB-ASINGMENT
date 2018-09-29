@@ -283,6 +283,7 @@ div#phrase h2 {
 #block3,
 #block4 {
     margin-bottom: 60px;
+    margin-top: 50px;
 }
 
 #last-block {
@@ -354,8 +355,9 @@ div#footer-title h2 {
 }
 
 .fontMetal{
+    padding-top: 14px;
     color: #6C5B39;
-    font-family: 'Metal', cursive;
+    font-family: 'Metal', Roboto;
 }
 
 .card {
@@ -391,7 +393,7 @@ div#footer-title h2 {
 }
 
 #content-sub {
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 1px 1px 10px rgb(219, 219, 219);
 }
 
@@ -525,7 +527,7 @@ element.style {
 .customecard-l{
     background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/tulip.jpg'); 
     border-radius: 20px 0px 0px 20px; 
-background-size: 100% 100%;
+    background-size: 100% 100%;
     box-shadow: 1px 1px 30px rgb(219, 219, 219)
 }
 .customecard-r{

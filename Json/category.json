@@ -1,7 +1,24 @@
 {
     "category":[
-        { "type":"របាំ","img":"../image/w1.jpg" },
-        { "type":"dfdf","img":"../image/w2.jpg"}
+
+        { "type":"របាំ","img":"../image/robam.jpg" },
+        { "type":"ប្រពៃណី","img":"../image/takong.png"},
+        { "type":"អប្សារា","img":"../image/apsa.jpg"},
+        { "type":"ល្ខោន","img":"../image/play.jpg"},
+        
+        { "type":"ប្រាសាទ","img":"../image/category-pic/temple.png"},
+        { "type":"ក្បាច់គុន","img":"../image/category-pic/kbachkun.png"},
+        { "type":"ភ្លេង","img":"../image/category-pic/pleng.png"},
+        { "type":"ប្រវិត្តសាស្ត្រ","img":"../image/category-pic/history.png"},
+        { "type":"អាពាហ៌ពិពាហ៌","img":"../image/category-pic/wedding.png"},
+        { "type":"នំ","img":"../image/category-pic/num.png"},
+        { "type":"ព្រេងនិទាន","img":"../image/category-pic/folk.png"},
+        { "type":"កំណាព្យ","img":"../image/category-pic/poem.png"},
+        { "type":"សាសនា","img":"../image/category-pic/religion.png"},
+        { "type":"រមណីយដ្ឋាន","img":"../image/category-pic/resort.png"},
+        { "type":"ច្បាប់","img":"../image/category-pic/law.png"},
+        { "type":"ភ្នំ","img":"../image/category-pic/phnom.png"}
+         
       
     ]
 }
