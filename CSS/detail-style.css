@@ -45,7 +45,7 @@
 .weswap-current,
 .weswap-new {
   display:inline-block;
-  height:200px;
+  height:530px;
   /* margin:10px 40px; */
   padding:5px;
   overflow:hidden;
@@ -64,7 +64,7 @@
  
 .weswap-current::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color:#ffc72e;
+  background-color:#ddb35a;
 }
 
 .weswap-new::-webkit-scrollbar {
@@ -82,4 +82,8 @@
 }
 .weswap-current::-webkit-scrollbar{
     width: 5px
+}
+
+.customtitle h4{ 
+  margin: 30px;
 }
