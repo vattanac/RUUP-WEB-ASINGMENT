@@ -56,7 +56,7 @@
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="collapse navbar-collapse"  id="navbarNav" style="background-color:yellow;z-index: 100">
 
                         <div id="topHeader">
                             <img src="image/mustach.png" alt="">
@@ -64,7 +64,7 @@
 
 
                         <div id="topHeader">
-                            <img src="image/mustach.png" alt="">
+                            <img src="image/grid.png" alt="">
                         </div>
 
 
@@ -73,10 +73,19 @@
                         <!-- start search -->
 
                         <div id="search">
-                            <div class="md-form">
-                                <input class="form-control" type="text" placeholder="ស្វែងរក" aria-label="Search">
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="row">
+                                        <div class="input-field col s10">
+        
+                                            <input type="text" id="autocomplete-input" class="autocomplete atc">
+                                            <label for="autocomplete-input">ស្វែងរក</label>
+        
+                                            <span id="floatt" style="padding:0 27px;color:#DDB35A"><i class="material-icons prefix">search</i></span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <img src="image/logo.png" alt="">
                         </div>
 
                         <!-- end search -->

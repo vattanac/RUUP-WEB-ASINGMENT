@@ -519,48 +519,78 @@ div#content-sub-footer p {
         width: 100%;
 
     }
-    .mycarousel{
+
+    .mycarousel {
         /* display: none */
     }
+
     .carousel {
         height: 100px !important;
     }
-    .carousel-cell{
-       
+
+    .carousel-cell {
+
         height: 100px !important;
     }
-    .flickity-prev-next-button.next , .flickity-prev-next-button.previous {
+
+    .flickity-prev-next-button.next,
+    .flickity-prev-next-button.previous {
         height: 30px !important;
         width: 30px !important;
     }
-    #card-content  {
+
+    #card-content {
         padding: 0 !important;
     }
-    #border{
+
+    #border {
         display: none;
     }
+
     div#phrase h2 {
         display: none;
     }
-    #header{
+
+    #header {
         background-size: 137% 100%;
         height: 270px;
     }
-    #card-content a{
+
+    #card-content a {
         font-size: 6px;
     }
-    #card-content p{
+
+    #card-content p {
         font-size: 7px;
     }
-    #border1{
+
+    #border1 {
         height: 1px;
     }
+
     .rgba-black-strong {
         margin-top: -27px;
         width: 100%;
         height: 100%;
         background-color: rgba(35, 31, 31, 0.54);
     }
+
+    /*Navbar*/
+    #nav-small-device #search {
+        width: 40%;
+        text-align: left;
+        margin: auto;
+    }
+    .input-field input:focus + label{
+        color: green !important;
+        /* display: none */
+    }
+    #nav-small-device #search {
+        width: 60%;
+        text-align: left;
+        margin: auto;
+    }
+
 }
 
 
@@ -615,7 +645,8 @@ div#content-sub-footer p {
     }
 
     #nav-small-device #search {
-        width: 34%;
+        margin: 0;
+        width: 60%;
         text-align: left;
         margin: auto;
     }
