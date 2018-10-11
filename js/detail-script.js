@@ -7,3 +7,4 @@ window.player = player;
 
 plyr.setup("#plyr-video");
 
+

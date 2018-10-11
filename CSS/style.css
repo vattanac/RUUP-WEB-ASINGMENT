@@ -9,16 +9,20 @@
     margin-bottom: 0px;
 
 }
-.mycarousel{
+
+.mycarousel {
     margin-top: 60px;
 }
-.fontMoulpali{
+
+.fontMoulpali {
     font-size: 25px;
     font-family: 'Moulpali', cursive;
 }
-.atc:focus{
-  color:#DDB35A  !important;
+
+.atc:focus {
+    color: #DDB35A !important;
 }
+
 body {
     background-color: rgb(243, 243, 243);
 }
@@ -352,7 +356,7 @@ div#footer-title h2 {
     margin: 0 auto;
 }
 
-.fontMetal{
+.fontMetal {
     padding-top: 14px;
     color: #6C5B39;
     font-family: 'Metal', Roboto;
@@ -368,9 +372,10 @@ div#footer-title h2 {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
 }
+
 /* sub css */
 
 #header-sub {
@@ -384,6 +389,7 @@ div#footer-title h2 {
     margin: 40px auto;
 
 }
+
 .card .card-title {
     font-size: 24px;
     font-family: 'Moulpali', cursive;
@@ -417,6 +423,145 @@ div#content-sub-footer p {
 
 /* end sub css */
 
+
+
+
+@media screen and (max-width: 375px) {
+
+    /* First Card */
+    #middle-contaner1 {
+        background-image: url(../image/w2.jpg);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .middle-content h2 a {
+        color: #6c5b39;
+        font-size: 22px;
+        margin: 0 90px;
+        text-decoration: none;
+    }
+
+    h2 {
+        margin: 0 !important
+    }
+
+    .middle-content {
+        width: 100%;
+    }
+
+    .middle-content p {
+        width: 100%;
+        float: right;
+        font-size: 14px;
+
+    }
+
+    #border2 {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    /*Second Card*/
+    #middle-contaner-inverse1 {
+        background-image: url(../image/w1.jpg);
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .middle-content-inverse {
+        width: 100%;
+        order: 2;
+        float: left;
+        padding: 40px 45px;
+    }
+
+    .middle-content-inverse p {
+        font-size: 14px;
+    }
+
+
+    .middle-content-inverse h2 a {
+        color: #6c5b39;
+        text-decoration: none;
+        font-size: 22px;
+        margin: 0 90px;
+    }
+
+    #art img {
+        margin-top: 22px;
+    }
+
+    #art {
+        margin-top: -60px;
+    }
+
+    /*Third Card*/
+    #middle-contaner2 {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        width: 100%;
+        height: 200px;
+
+    }
+
+
+    #middle-contaner-inverse2 {
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+        height: 200px;
+        width: 100%;
+
+    }
+    .mycarousel{
+        /* display: none */
+    }
+    .carousel {
+        height: 100px !important;
+    }
+    .carousel-cell{
+       
+        height: 100px !important;
+    }
+    .flickity-prev-next-button.next , .flickity-prev-next-button.previous {
+        height: 30px !important;
+        width: 30px !important;
+    }
+    #card-content  {
+        padding: 0 !important;
+    }
+    #border{
+        display: none;
+    }
+    div#phrase h2 {
+        display: none;
+    }
+    #header{
+        background-size: 137% 100%;
+        height: 270px;
+    }
+    #card-content a{
+        font-size: 6px;
+    }
+    #card-content p{
+        font-size: 7px;
+    }
+    #border1{
+        height: 1px;
+    }
+    .rgba-black-strong {
+        margin-top: -27px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(35, 31, 31, 0.54);
+    }
+}
 
 
 
@@ -479,66 +624,77 @@ div#content-sub-footer p {
         right: -24px;
     }
 }
+
 /*flickity*/
 
 /* external css: flickity.css */
 
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
-body { font-family: sans-serif; }
+body {
+    font-family: sans-serif;
+}
 
 .carousel {
-  background: #FAFAFA;
+    background: #FAFAFA;
 }
 
 .carousel-cell {
-  width: 25%;
-  height: 500px;
-  margin-right: 10px;
-  background: #333;
+    width: 25%;
+    height: 500px;
+    margin-right: 10px;
+    background: #333;
 }
 
 .carousel-cell-imagee {
-  display: block;
-  max-height: 100%;
-  margin: 0 auto;
-  max-width: 100%;
-  opacity: 0;
-  -webkit-transition: opacity 0.4s;
-          transition: opacity 0.4s;
+    display: block;
+    max-height: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
 }
 
 
 /* fade in lazy loaded image */
 .carousel-cell-image.flickity-lazyloaded,
 .carousel-cell-image.flickity-lazyerror {
-  opacity: 1;
+    opacity: 1;
 }
+
 element.style {
     height: 500px !important;
     touch-action: pan-y;
 }
-.myimage{
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/tulip.jpg'); 
+
+.myimage {
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/tulip.jpg');
     background-size: 100% 100%;
 }
-.customecard-l{
-   
-    border-radius: 10px 0px 0px 10px; 
+
+.customecard-l {
+
+    border-radius: 10px 0px 0px 10px;
     background-size: 100% 100%;
     box-shadow: 1px 1px 30px rgb(219, 219, 219)
 }
-.customecard-r{
+
+.customecard-r {
     border-radius: 0px 10px 10px 0px;
     box-shadow: 1px 1px 30px rgb(219, 219, 219)
 }
-.custome-cate-title h2 a{
+
+.custome-cate-title h2 a {
     font-size: 20px;
     color: #ddb35a;
     text-decoration: underline;
 }
-.custome-cate-title img{
-    
+
+.custome-cate-title img {
+
     width: 25px;
     height: 25px;
 }

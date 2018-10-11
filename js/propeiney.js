@@ -1,17 +1,16 @@
-
 var xmlhttp = new XMLHttpRequest();
 var obj2 = new Array();
 xmlhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         var myObj = JSON.parse(this.responseText);
         var items = "";
-        addCatNameTitle(myObj.lorkta[0].art);
-        for (var a in myObj.lorkta[0].art) {
-            items += mascard(myObj.lorkta[0].art[a]);
+        addCatNameTitle(myObj.lorkta[2].traditional);
+        for (var a in myObj.lorkta[2].traditional) {
+            items += mascard(myObj.lorkta[2].traditional[a]);
         }
-       
+
         $(".mycard-data").html(items);
-       
+
     }
 };
 xmlhttp.open("GET", "../Json/Data.json", false);
@@ -26,13 +25,13 @@ function getCardID(id) {
         if (this.readyState == 4 && this.status == 200) {
             var myObj = JSON.parse(this.responseText);
             var items = "";
-        
-            for (var a in myObj.lorkta[0].art) {
-                //console.log( myObj.lorkta[0].art[a])
-                items += mascard(myObj.lorkta[0].art[a]);
-                if(id==myObj.lorkta[0].art[a].id){
 
-            var concate =   `
+            for (var a in myObj.lorkta[2].traditional) {
+                //console.log( myObj.lorkta[0].art[a])
+                items += mascard(myObj.lorkta[2].traditional[a]);
+                if (id == myObj.lorkta[2].traditional[a].id) {
+
+                    var concate = `
                <div id="body-sub" class="row d-flex justify-content-center" style="width:65%;;background-color: rgba(197, 13, 84, 0);">
 
                <div class="col" style="width:65%;">
@@ -63,7 +62,7 @@ function getCardID(id) {
 
        </div>
                `
-        
+
                 }
             }
 
@@ -83,32 +82,33 @@ function getCardID(id) {
     xmlhttp.send();
 
 
-   
-   // $(".mycard-data").html(a);
+
+    // $(".mycard-data").html(a);
 
     ID = id;
 }
-function addCatNameTitle(obj){
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-          var myObj = JSON.parse(this.responseText);
-          var item = myObj.lorkta[0].art;
-            console.log(item[0].type);
-            
 
-          var concate = ` <div class="row px-3 d-flex justify-content-center">
+function addCatNameTitle(obj) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            var myObj = JSON.parse(this.responseText);
+            var item = myObj.lorkta[2].traditional;
+            console.log(item[0].type);
+
+
+            var concate = ` <div class="row px-3 d-flex justify-content-center">
                 
-                             <img class="mt-2" src="../image/`+ item.img +`" alt="">
-                             <h2><a href="#">`+ item[0].type +`</a></h2>
+                             <img class="mt-2" src="../image/` + item.img + `" alt="">
+                             <h2><a href="#">` + item[0].type + `</a></h2>
 
                          </div>`;
 
-          $(".catdata").html(concate);
-      }
-  };
-  xmlhttp.open("GET", "../Json/Data.json", false);
-  xmlhttp.send();
+            $(".catdata").html(concate);
+        }
+    };
+    xmlhttp.open("GET", "../Json/Data.json", false);
+    xmlhttp.send();
 }
 
 
