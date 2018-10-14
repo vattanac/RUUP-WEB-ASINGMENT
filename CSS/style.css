@@ -586,9 +586,13 @@ div#content-sub-footer p {
         /* display: none */
     }
     #nav-small-device #search {
+        padding-top: 20px;
         width: 60%;
         text-align: left;
         margin: auto;
+    }
+    #nav{
+        margin:-60px;
     }
 
 }
@@ -645,10 +649,10 @@ div#content-sub-footer p {
     }
 
     #nav-small-device #search {
-        margin: 0;
+        /* margin: 0;
         width: 60%;
         text-align: left;
-        margin: auto;
+        margin: auto; */
     }
 
     #nav-small-device #search img {
