@@ -33,7 +33,16 @@
   border-radius: 0px 0px  10px 10px;
   padding: 30px;
 }
-
+@media screen and (max-width: 475px) {
+  .cusbot-bar{
+   
+    padding: 0px;
+  }
+  .resp-small-detail{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
 /*ADD SCROLLBAR*/
 /* body {
   font-family:sans-serif;

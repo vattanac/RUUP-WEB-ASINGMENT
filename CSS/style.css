@@ -190,7 +190,7 @@ div#phrase h2 {
 }
 
 #middle-contaner1 {
-    background-image: url("../image/w2.jpg");
+    background-image: url("../image/himage/bb.jpg");
     clip-path: polygon(0 0, 99% 0, 72% 100%, 0% 100%);
     height: 330px;
     background-repeat: no-repeat;
@@ -201,7 +201,7 @@ div#phrase h2 {
 }
 
 #middle-contaner2 {
-    background-image: url("../image/pchu.jpg");
+    background-image: url("../image/himage/ka.jpg");
     clip-path: polygon(0 0, 99% 0, 72% 100%, 0% 100%);
     height: 330px;
     background-repeat: no-repeat;
@@ -221,7 +221,7 @@ div#phrase h2 {
 }
 
 #middle-contaner-inverse2 {
-    background-image: url("../image/monk.jpg");
+    background-image: url("../image/himage/kb.jpg");
     clip-path: polygon(24% 0, 100% 0, 100% 100%, 0% 100%);
     height: 330px;
     background-repeat: no-repeat;
@@ -233,13 +233,13 @@ div#phrase h2 {
 .middle-content {
     width: 50%;
     float: right;
-    padding: 40px 20px 40px 0px;
+    padding: 40px 20px 0px 0px;
 }
 
 .middle-content-inverse {
     width: 50%;
     float: left;
-    padding: 40px 45px;
+    padding: 40px 45px 0px;
 }
 
 .middle-content-inverse p {
@@ -387,6 +387,8 @@ div#footer-title h2 {
 
 #body-sub {
     margin: 40px auto;
+    width: 65%;
+    background-color: rgba(197, 13, 84, 0);
 
 }
 
@@ -424,13 +426,46 @@ div#content-sub-footer p {
 /* end sub css */
 
 
+.res-cat {
+    width: 65%;
+}
 
+@media screen and (max-width: 475px) {
 
-@media screen and (max-width: 375px) {
+    .customecard-l {
+        border-radius: 10px 10px 0px 0px !important;
+    }
+
+    .customecard-r {
+        border-radius: 0px 10px 10px 10px !important;
+    }
 
     /* First Card */
+    #body-sub {
+        width: 100%;
+    }
+
+    .res-cat {
+        width: 90%;
+    }
+
+    button.navbar-toggler:focus {
+        background-color: rgb(219, 177, 88);
+    }
+
+    .hh {
+        height: 450px !important;
+        /* z-index: 200px; */
+    }
+
+    .customcontainer {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
     #middle-contaner1 {
-        background-image: url(../image/w2.jpg);
+        background-image: url(../image/himage/bb.jpg);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         height: 200px;
         background-repeat: no-repeat;
@@ -442,7 +477,7 @@ div#content-sub-footer p {
     .middle-content h2 a {
         color: #6c5b39;
         font-size: 22px;
-        margin: 0 90px;
+        margin: 0;
         text-decoration: none;
     }
 
@@ -462,7 +497,7 @@ div#content-sub-footer p {
     }
 
     #border2 {
-        margin: auto;
+       
         margin-bottom: 20px;
     }
 
@@ -493,7 +528,7 @@ div#content-sub-footer p {
         color: #6c5b39;
         text-decoration: none;
         font-size: 22px;
-        margin: 0 90px;
+        margin: 0px;
     }
 
     #art img {
@@ -581,18 +616,21 @@ div#content-sub-footer p {
         text-align: left;
         margin: auto;
     }
-    .input-field input:focus + label{
-        color: green !important;
+
+    .input-field input:focus+label {
+        color: #ddb35a !important;
         /* display: none */
     }
+
     #nav-small-device #search {
         padding-top: 20px;
         width: 60%;
         text-align: left;
         margin: auto;
     }
-    #nav{
-        margin:-60px;
+
+    #nav {
+        margin: -60px;
     }
 
 }

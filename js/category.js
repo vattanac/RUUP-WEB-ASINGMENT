@@ -40,3 +40,5 @@ function mascard(category) {
     return c;
 }
 
+
+

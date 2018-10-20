@@ -115,7 +115,7 @@ function addCatNameTitle(obj) {
 function mascard(obj) {
 
     var a =
-        `<div class="row " style="width:65%;" id='` + obj.id + `' onClick='getCardID(this.id)'>
+        `<div class="row res-cat" id='` + obj.id + `' onClick='getCardID(this.id)'>
 
                 <div class="col-md-5 customecard-l" style="background-color: white;height: 250px;z-index:100;background-image: url('../image/` + obj.img + `');  ">
                 <!-- place for image here -->
