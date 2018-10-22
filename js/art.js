@@ -30,34 +30,35 @@ function getCardID(id) {
             var items = "";
 
             for (var a in myObj.lorkta[0].art) {
-                //console.log( myObj.lorkta[0].art[a])
+
+                //console.log( myObj.lorkta[0].art[a].)
                 items += mascard(myObj.lorkta[0].art[a]);
                 var mdata = myObj.lorkta[0].art;
-              
+                console.log(mdata)
+                var myID = Number(id) - 1
+                console.log(myID)
                 if (id == myObj.lorkta[0].art[a].id) {
-
-                    for (var i = 0; i < mdata.length; i++) {
+                    console.log("ID" + id)
+                   
                         var concate = `
                <div id="body-sub" class="row d-flex justify-content-center" style="width:65%;;background-color: rgba(197, 13, 84, 0);">
 
                <div class="col" style="width:65%;">
 
                        <div style="width:100%">
-                           <video style="border-radius:5px" id="plyr-video" poster="../image/w2.jpg" controls>
+                           <video style="border-radius:5px" id="plyr-video" poster="../image/` + mdata[myID].img + `" controls>
                                <source src="../videos/kakun.mp4" type="video/mp4">
                            </video>
                        </div>
            
                        <div class="row-md-7 customecard-r2 cusbot-bar fontMetal customtitle" style="background-color: white; ">
                            <h4 >
-                           ` + mdata[i].title + `
+                           ` + mdata[myID].title + `
                            </h4>
                            <div class="weswap-current ">
                               
-                           ` + mdata[i].fuldes + `
-
-                        
-                              
+                           ` + mdata[myID].fuldes + `
+                  
                            </div>
                        </div>
                    </div>
@@ -65,9 +66,13 @@ function getCardID(id) {
 
        </div>
                `
+                        // console.log(i)
+                        // console.log(mdata[i].img)
 
                     }
-                }
+                    //  console.log(i)
+                    //  console.log(mdata)
+              
             }
 
             concate += `<script src="../js/jquery-3.3.1.min.js"></script>
