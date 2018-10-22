@@ -1,3 +1,4 @@
+//Must Know Range Of Json index from category 
 var xmlhttp = new XMLHttpRequest();
 var obj2 = new Array();
 xmlhttp.onreadystatechange = function () {

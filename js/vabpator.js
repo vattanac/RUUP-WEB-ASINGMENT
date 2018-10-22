@@ -22,7 +22,7 @@ var ID
 
 
 function getCardID(id) {
-   // alert(id);
+    alert(id);
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -40,7 +40,7 @@ function getCardID(id) {
                     
                      //console.log("MYID"+myId)
                     console.log("ID :" + id)
-                    //console.log(mdata[1])
+                    console.log(mdata[0])
                  //  if(myID<mdata.length){
                     
                         var concate = `
