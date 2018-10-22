@@ -22,7 +22,7 @@ var ID
 
 
 function getCardID(id) {
-    alert(id);
+    //alert(id);
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -38,7 +38,7 @@ function getCardID(id) {
                 var myID = Number(id) - 1
                 console.log(myID)
                 if (id == myObj.lorkta[0].art[a].id) {
-                    console.log("ID" + id)
+                    console.log("ID :" + id)
                    
                         var concate = `
                <div id="body-sub" class="row d-flex justify-content-center" style="width:65%;;background-color: rgba(197, 13, 84, 0);">
