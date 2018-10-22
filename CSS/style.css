@@ -180,9 +180,15 @@ div#phrase h2 {
 }
 
 #art h2 a {
+   
     font-size: 20px;
     color: #ddb35a;
     text-decoration: underline;
+}
+
+#art h2 {
+    margin-left: 0px;
+    margin-top: -2%;
 }
 
 #art h2 a:hover {
@@ -270,10 +276,6 @@ div#phrase h2 {
     box-shadow: 1px 1px 10px rgb(219, 219, 219);
 }
 
-#art h2 {
-    margin-left: 0px;
-    margin-top: -3%;
-}
 
 #border2 {
     width: 110px;
