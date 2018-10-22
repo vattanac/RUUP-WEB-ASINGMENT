@@ -1,12 +1,13 @@
+
 var xmlhttp = new XMLHttpRequest();
 var obj2 = new Array();
 xmlhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         var myObj = JSON.parse(this.responseText);
         var items = "";
-        addCatNameTitle(myObj.lorkta[1].culture);
-        for (var a in myObj.lorkta[1].culture) {
-            items += mascard(myObj.lorkta[1].culture[a]);
+        addCatNameTitle(myObj.lorkta[3].entertain);
+        for (var a in myObj.lorkta[3].entertain) {
+            items += mascard(myObj.lorkta[3].entertain[a]);
         }
 
         $(".mycard-data").html(items);
@@ -18,8 +19,11 @@ xmlhttp.send();
 
 var ID
 
+
+
+
 function getCardID(id) {
-    // alert(id);
+// alert(id);
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -27,34 +31,38 @@ function getCardID(id) {
             var items = "";
 
             for (var a in myObj.lorkta[3].entertain) {
-                //console.log( myObj.lorkta[0].art[a])
-                items += mascard(myObj.lorkta[3].entertain[a]);
-                if (id == myObj.lorkta[3].entertain[a].id) {
 
-                    var concate = `
+                items += mascard(myObj.lorkta[3].entertain[a]);
+                var mdata = myObj.lorkta[3].entertain;
+               
+                var myID = Number(id) - 40
+             //   console.log(myID)
+                if (id == myObj.lorkta[3].entertain[a].id) {
+                    
+                     //console.log("MYID"+myId)
+                    console.log("ID :" + id)
+                    console.log(mdata[0])
+                 //  if(myID<mdata.length){
+                    
+                        var concate = `
                <div id="body-sub" class="row d-flex justify-content-center" style="width:65%;;background-color: rgba(197, 13, 84, 0);">
 
                <div class="col" style="width:65%;">
 
                        <div style="width:100%">
-                           <video style="border-radius:5px" id="plyr-video" poster="../image/w2.jpg" controls>
+                           <video style="border-radius:5px" id="plyr-video" poster="../image/`+ mdata[myID].img+`" controls>
                                <source src="../videos/kakun.mp4" type="video/mp4">
                            </video>
                        </div>
            
                        <div class="row-md-7 customecard-r2 cusbot-bar fontMetal customtitle" style="background-color: white; ">
-                           <h4 >ចោរ​បន្លំ​ចូល​ក្នុង​គណនី ​Facebook ​របស់​អ្នក​ប្រើ
-                               ​មិន​តិច​ជាង​៥០​លាន​គណនី</h4>
+                           <h4 >
+                           ` + mdata[myID].title + `
+                           </h4>
                            <div class="weswap-current ">
                               
-                               វិបត្តិសន្តិសុខបច្ចេកវិទ្យា កំពុងតែធ្វើឲ្យរញ្ជួយក្រុមហ៊ុន Facebook ដែលជាក្រុមហ៊ុនបណ្តាញសង្គម
-                               ដ៏ធំជាងគេបំផុតលើលោក។ ពីស៊ីលីកូន វ៉ាឡេ រដ្ឋកាលីហ្វ័រញ៉ា កាលពីថ្ងៃសុក្រ ទី២៨កញ្ញា លោក Mark
-                               Zuckerberg អគ្គនាយកនៃអាណាចក្របណ្តាញសង្គមនេះ បានប្រកាសថា Facebook ទើបតែត្រូវបាន
-                               រងនូវការចូលបន្លំលុកលុយ ពីសំណាក់​ចោរ​ព័ត៌មានវិទ្យា។ មានគណនីFacebook យ៉ាងហោចណាស់ ៥០លាន​គណនី
-                               ដែលត្រូវបានចោរព័ត៌មានវិទ្យា បន្លំចូល និងប្រើប្រាស់។ ក្រុមហ៊ុនFacebook បានធ្វើការសូម​ទោស
-                               ទៅដល់អ្នកប្រើប្រាស់ទាំងអស់ ហើយបានសន្យា បំពេញកង្វះខាត ផ្នែកសន្តិសុខបច្ចេកវិទ្យា​នេះឲ្យបាន។
-           
-                              
+                           ` + mdata[myID].fuldes + `
+                  
                            </div>
                        </div>
                    </div>
@@ -62,8 +70,14 @@ function getCardID(id) {
 
        </div>
                `
-
-                }
+              
+               
+                        // console.log(mdata[i].img)
+                       
+                    }
+                    //  console.log(i)
+                    //  console.log(mdata)
+              
             }
 
             concate += `<script src="../js/jquery-3.3.1.min.js"></script>
@@ -115,7 +129,7 @@ function addCatNameTitle(obj) {
 function mascard(obj) {
 
     var a =
-        `<div class="row res-cat" id='` + obj.id + `' onClick='getCardID(this.id)'>
+        `<div class="row res-cat "  id='` + obj.id + `' onClick='getCardID(this.id)'>
 
                 <div class="col-md-5 customecard-l" style="background-color: white;height: 250px;z-index:100;background-image: url('../image/` + obj.img + `');  ">
                 <!-- place for image here -->
